@@ -3,6 +3,9 @@
   "version": "0.0.0",
   "description": "",
   "main": "lib/index.js",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
   "scripts": {
     "test": "heft test --clean",
     "test:watch": "heft test --watch",
