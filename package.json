@@ -1,7 +1,7 @@
 {
   "name": "feathers-bullmq-transport",
-  "version": "0.0.0",
-  "description": "",
+  "version": "0.0.1",
+  "description": "Simple mapping from bullmq to feathers services",
   "main": "lib/index.js",
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"
