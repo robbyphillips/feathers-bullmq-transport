@@ -1,6 +1,6 @@
 {
   "name": "@robbyphillips/feathers-bullmq-transport",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Simple mapping from bullmq to feathers services",
   "main": "lib/index.js",
   "publishConfig": {
@@ -15,9 +15,11 @@
   "keywords": [],
   "author": "Rob Phillips",
   "license": "MIT",
-  "peerDependencies": {
-    "@feathersjs/feathers": "^4.5.9",
+  "dependencies": {
     "bullmq": "^1.10.0"
+  },
+  "peerDependencies": {
+    "@feathersjs/feathers": "^4.5.9"
   },
   "devDependencies": {
     "@microsoft/api-extractor": "^7.10.5",
