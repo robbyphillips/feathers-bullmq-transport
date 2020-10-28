@@ -1,0 +1,40 @@
+{
+  "name": "feathers-bullmq-transport",
+  "version": "0.0.0",
+  "description": "",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "heft test --clean",
+    "test:watch": "heft test --watch",
+    "build": "heft test --clean",
+    "build:dev": "heft build"
+  },
+  "keywords": [],
+  "author": "Rob Phillips",
+  "license": "MIT",
+  "peerDependencies": {
+    "@feathersjs/feathers": "^4.5.9",
+    "bullmq": "^1.10.0"
+  },
+  "devDependencies": {
+    "@microsoft/api-extractor": "^7.10.5",
+    "@rushstack/eslint-config": "^2.2.1",
+    "@rushstack/heft": "^0.17.3",
+    "@types/heft-jest": "^1.0.2",
+    "@types/node": "^12.19.2",
+    "eslint": "~7.8.1",
+    "husky": "^4.3.0",
+    "lint-staged": "^10.5.0",
+    "prettier": "^2.1.2",
+    "typescript": "^4.0.5"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{ts,js}": "eslint --cache --fix",
+    "*.{ts,js,css,md}": "prettier --write"
+  }
+}

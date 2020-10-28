@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "outDir": "lib",
+    "module": "commonjs",
+    "rootDirs": ["src/"],
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "declaration": true,
+    "declarationMap": true,
+    "sourceMap": true,
+    "experimentalDecorators": true,
+    "esModuleInterop": true,
+    "types": ["node", "heft-jest"],
+    "target": "es2017",
+    "lib": ["ES2019", "ES2020"]
+  },
+  "include": ["src/**/*.ts"],
+  "exclude": ["node_modules"]
+}
