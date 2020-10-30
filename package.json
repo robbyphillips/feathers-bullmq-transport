@@ -1,6 +1,6 @@
 {
   "name": "@robbyphillips/feathers-bullmq-transport",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Simple mapping from bullmq to feathers services",
   "main": "lib/index.js",
   "publishConfig": {
