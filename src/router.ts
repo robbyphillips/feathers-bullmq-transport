@@ -33,9 +33,11 @@ export function makeRouter(
     }
 
     if (methodName === 'create') {
-      return app.service(serviceName).create(job.data)
+      return app.service(serviceName).create(job.data, { provider: 'bullmq' })
     }
 
-    return app.service(serviceName)[methodName](id, job.data)
+    return app
+      .service(serviceName)
+      [methodName](id, job.data, { provider: 'bullmq' })
   }
 }

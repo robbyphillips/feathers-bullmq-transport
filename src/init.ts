@@ -22,6 +22,9 @@ export interface IConfig {
    * ```
    */
   services?: Record<string, MethodName[]>
+
+  /** key to use to get the Worker with app.get(<key>) */
+  key?: string
 }
 
 export function init(opts: IConfig): (app: Application) => Worker {
@@ -31,6 +34,12 @@ export function init(opts: IConfig): (app: Application) => Worker {
 
     const routerFn = makeRouter(app, serviceLookup)
 
-    return new Worker(opts.queueName, routerFn, opts.workerConfig)
+    const worker = new Worker(opts.queueName, routerFn, opts.workerConfig)
+
+    if (opts.key) {
+      app.set(opts.key, worker)
+    }
+
+    return worker
   }
 }
