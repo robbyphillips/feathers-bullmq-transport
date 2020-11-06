@@ -2,6 +2,7 @@
   "name": "feathers-bullmq-transport",
   "version": "0.0.3",
   "description": "Simple mapping from bullmq to feathers services",
+  "homepage": "https://github.com/robbyphillips/feathers-bullmq-transport",
   "main": "lib/index.js",
   "scripts": {
     "test": "heft test --clean",

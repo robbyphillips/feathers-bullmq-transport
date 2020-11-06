@@ -4,5 +4,5 @@ A simple way to map `bullmq` jobs to `feathers` services based on job name. Writ
 
 ```typescript
 import feathers from '@feathersjs/feathers'
-import bullmqTransport from '@robbyphillips/feathers-bullmq-transport'
+import bullmqTransport from 'feathers-bullmq-transport'
 ```
